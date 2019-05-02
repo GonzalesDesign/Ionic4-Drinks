@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RlgErrorDirective } from './directives/rlg-error.directive';
+// import { RlgErrorDirective } from './directives/rlg-error.directive';
 import { FadeDirective } from './directives/fade.directive';
 
 @NgModule({
-  declarations: [RlgErrorDirective, FadeDirective],
-  exports: [RlgErrorDirective, FadeDirective],
+  declarations: [FadeDirective],
+  exports: [FadeDirective],
   imports: [
     CommonModule
   ]

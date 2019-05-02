@@ -2,9 +2,11 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-    {   path: 'loader', loadChildren: './loader-svg/loader.module#LoaderPageModule'},
+    // {   path: 'loader', loadChildren: './loader-svg/loader.module#LoaderPageModule'},
+    // {   path: '', redirectTo: 'loader', pathMatch: 'full'},
+    // {   path: 'home', loadChildren: './home/home.module#HomePageModule'},
 
-    {   path: '', redirectTo: 'loader', pathMatch: 'full'},
+    {   path: '', redirectTo: 'home', pathMatch: 'full'},
 
     {   path: 'home', loadChildren: './home/home.module#HomePageModule'},
 
