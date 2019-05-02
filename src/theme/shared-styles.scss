@@ -1,0 +1,92 @@
+/******************************************************
+* Project: Angular 7 & Ionic 4
+* Contact: rolandolloyd@gmail.com
+* Copyright © 2019 GonzalesDesign
+* Platform: Angular7/Ionic4
+* Note: Shared scss styles.
+        Import to other styles.
+*******************************************************/
+
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url('https://fonts.googleapis.com/css?family=Ovo');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i");
+
+/*--= PRIMARY =--*/
+$rlgColorPrimary: #347B98;
+$rlgColorPrimaryMid: lighten($rlgColorPrimary, 10%); // rgb(84, 163, 194);
+$rlgColorPrimaryQtr: lighten($rlgColorPrimary, 20%); // rgb(121, 206, 240);
+
+/*--= SECONDARY =--*/
+$rlgColorSecondary: rgb(254, 68, 0); //#fe5900
+$rlgColorSecondaryMid: lighten($rlgColorSecondary, 15%);
+$rlgColorSecondaryDrk: darken($rlgColorSecondary, 5%);
+
+/*--= TERTIARY =--*/
+$rlgColorTertiary: #92d11f; // #92d11f  #B2D732
+$rlgColorTertiaryMid: lighten($rlgColorTertiary, 30%); //#cfe876;
+$rlgColorTertiaryQtr: lighten($rlgColorTertiary, 45%);
+
+
+$text-light-shadow: 1px 1px rgba(rgb(104, 104, 104), .25);
+$fontBarlow: 'Barlow Condensed', sans-serif;
+$fontMuli: 'Muli', sans-serif;
+$fontMerriweather: "Merriweather";
+$fontOvo: "Ovo";
+$fontOswald: "Oswald";
+
+/*---=| Font Mixin |=---*/
+@mixin fontFamilyWeightSize ($fontFam, $fontWt, $fontSz, $Color){
+    font-family: $fontFam;
+    font-weight: $fontWt;
+    font-size: $fontSz;
+    color: $Color;
+    // to use: @include fontFamilyWeightSize ($rlg-primary-font, 600, 1em);
+}
+
+.absolut {
+    @include fontFamilyWeightSize ($fontOswald, 500, 1.5em, var(--ion-color-danger));
+}
+.experience {
+    @include fontFamilyWeightSize ($fontOswald, 500, 1.5em, var(--ion-color-light));
+}
+
+.sub-header {
+    @include fontFamilyWeightSize ($fontMuli, 500, 1em, rgb(95, 113, 113));
+}
+
+.toolbar-logo {
+    height: 50px;
+    width: 50vw;
+    margin: 0;
+    padding: 0;
+    left: 10px;
+    border: 1px solid red;
+}
+
+.email-button {
+    --background: var(--ion-color-xtra);
+    // background-color: var(--ion-color-xtra);
+}
+// :host(.button-solid) {
+//     --background: var(--ion-color-xtra);
+//     // background-color: var(--ion-color-xtra);
+// }
+
+h1 {
+    @include fontFamilyWeightSize ($fontMerriweather, 500, 2em, rgb(95, 113, 113));
+}
+h2 {
+    @include fontFamilyWeightSize ($fontMerriweather, 500, 1.5em, rgb(95, 113, 113));
+}
+h3 {
+    @include fontFamilyWeightSize ($fontMerriweather, 500, 1em, var(--ion-color-secondary-contrast));
+}
+
+p {
+    @include fontFamilyWeightSize ($fontMuli, 300, 1em, rgb(95, 113, 113));
+}
+
+html, body {  min-width:350px; }

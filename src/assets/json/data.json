@@ -1,0 +1,25 @@
+[
+    {
+        "id":           "d0",
+        "title":        "Bloody Mary",
+        "imageUrl":     "./../../assets/images/BloodyMary.jpg",
+        "recipe":     [
+            { "ingredient": "1.5 OZ SMIRNOFF® NO. 21 VODKA"},
+            { "ingredient": "5 OZ TOMATO JUICE"},
+            { "ingredient": "5 dash of hot sauce"},
+            { "ingredient": "DASH WORCESTERSHIRE SAUCE"}
+        ],
+        "instruction":  "SERVE OVER ICE IN A ROCKS GLASS."
+    },
+    {
+        "id":           "d1",
+        "title":        "Screwdriver",
+        "imageUrl":     "./../../assets/images/Screwdriver.jpg",
+        "recipe":     [
+            { "ingredient": "1.5 OZ SMIRNOFF® NO. 21 VODKA"},
+            { "ingredient": "3 OZ FRESH ORANGE JUICE"},
+            { "ingredient": "ORANGE WEDGE"}
+        ],
+        "instruction":  "SERVE OVER ICE IN A ROCKS GLASS."
+    }
+]

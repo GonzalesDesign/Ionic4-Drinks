@@ -1,0 +1,112 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <!-- <ion-title class="absolut">ABSOLUT</ion-title> -->
+    <!-- class="experience">EXPERIENCE</ion-title> -->
+    <ion-title>
+        <span class="absolut">ABSOLUT</span>
+        <span class="experience">EXPERIENCE</span>
+    </ion-title>
+    <!-- <ion-img
+        class="toolbar-logo"
+        src="./../../assets/images/smirnoff.jpg">
+    </ion-img> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <!-- <ion-list>
+            <ion-item *ngFor="let drink of aDrinks"
+                [style.border]="'0px solid grey'"
+                [style.padding.px]="'10'"
+                [routerLink]="['./', drink.id]"
+                >
+                <ion-avatar slot="start">
+                    <ion-img [src]="drink.imageUrl"></ion-img>
+                </ion-avatar>
+                <ion-label>{{drink.title}}</ion-label>
+            </ion-item>
+    </ion-list> -->
+
+    <ion-grid>
+        <ion-row>
+            <ion-col padding size="10" offset="1">
+            <ion-text color="dark" text-center>
+                <h1>Make your favorite Vodka drinks</h1>
+                <p>Learn To Make A Delicious Vodka Drink In Minutes. Find The Recipe Here! Worlds #1 Vodka.
+                    Simple Ingredients. Delicious & Easy Recipes. Simple Drinks To Punches. Drinks For Any Occasion.
+                    The Original Moscow Mule. Types: Cherry, Green Apple, Raspberry, Vanilla, Smirnoff Vodka.</p>
+            </ion-text>
+
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col *ngFor="let drink of aDrinks"
+                     size-xs="8" offset-xs="2"
+                     size-sm="6" offset-sm="0"
+                     size-md="4" offset-md="0"
+                     no-padding
+                    >
+                <ion-card style="height: 90%;" padding>
+                    <ion-img [src]="drink.imageUrl"></ion-img>
+                    <!-- <ion-card-header text-center> -->
+                        <ion-button
+                            class="product-list-button"
+                            text-center
+                            fill="clear"
+                            [routerLink]="['./', drink.id]">
+                            <!-- <ion-card-subtitle
+                                class="compressed-header"
+                                [routerLink]="['./', drink.id]"
+                                text-uppercase> -->
+                                {{drink.title}}
+                            <!-- </ion-card-subtitle> -->
+                        </ion-button>
+                        <!-- <ion-card-title class="compressed-headerX">{{drink.title}}</ion-card-title> -->
+                        <!-- <ion-card-subtitle *ngFor="let recipe of drink.recipe">
+                            {{recipe.ingredient}}
+                        </ion-card-subtitle> -->
+                    <!-- </ion-card-header> -->
+                    <ion-card-content>
+                        <!-- <p>{{drink.instruction}}</p> -->
+                    </ion-card-content>
+                </ion-card>
+
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+
+  <!-- <ion-list> -->
+
+        <!-- <ion-list>
+                <ion-item *ngFor="let l of landing" [routerLink]="['./', l.id]">
+                    <ion-avatar slot="start">
+                        <ion-img [src]="l.imageUrl"></ion-img>
+                    </ion-avatar>
+                    <ion-label> {{ l.title }}</ion-label>
+                </ion-item>
+            </ion-list> -->
+
+
+    <!-- <ion-item *ngFor="let item of items">
+      <ion-icon [name]="item.icon" slot="start"></ion-icon>
+      {{item.title}}
+      <div class="item-note" slot="end">
+        {{item.note}}
+      </div>
+    </ion-item>
+  </ion-list> -->
+  <!--
+    <div *ngIf="selectedItem" padding>
+      You navigated here from <b>{{selectedItem.title }}</b>
+    </div>
+  -->
+</ion-content>
